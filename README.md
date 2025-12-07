@@ -69,7 +69,12 @@ Before Rag
   ```sh
   Create a document with all case information
   ```
+Before SFT
+* 1. Download SFT Training Document as a csv
+  ```sh
+  curl -L "https://drive.google.com/uc?export=download&id=1gQcQ0NQTQwiPxcm_0i6RedkbVM_vrggM" -o myfile.zip
 
+  ```
 ### Installation
 
 1. Get a free API Key at [https://example.com](https://example.com)
