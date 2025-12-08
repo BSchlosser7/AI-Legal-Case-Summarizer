@@ -75,26 +75,32 @@ Before SFT
   curl -L "https://drive.google.com/uc?export=download&id=1gQcQ0NQTQwiPxcm_0i6RedkbVM_vrggM" -o myfile.zip
 
   ```
-### Installation
+### Running RAG Model
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Open the [RAG colab notebook](https://colab.research.google.com/drive/1k775dmgq6Sw2-eLJWe3i02b2LYp-sHlA?usp=sharing)
+2. Clone the notebook to your personal drive
+3. Insert personal API and Class
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   AZURE_API_KEY = "[Insert Here]"
+   CLASS = "[Insert Here]"
    ```
-3. Install NPM packages
+4. Upload Compiled Cases RAG to current Colab Notebook
+  * Left Sidebar --> File Icon --> Upload Icon --> Compiled Cases RAG
+   
+5. If you ADDED new cases or CHANGED existing ones, edit to include: 
    ```sh
-   npm install
+   evaluate_questions = [
+    "Write a case summary for Celotex Corp. v Catrett",
+    "Write a case summary for Harrington v Richter",
+    "Write a case summary for Bell v Cone",
+    "Write a case summary for Lockyer v Andrade",
+    "Write a case summary for Arizona v Evans",
+    "Write a case summary for Maryland v King",
+    "Write a case summary for Herring v US",
+    "Write a case summary for [INSERT NEW CASE]
+    ]
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+6. Click "Run all" in the menu bar and wait for outputs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
