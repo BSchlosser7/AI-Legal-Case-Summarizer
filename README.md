@@ -73,8 +73,10 @@ Before SFT
 * 1. Download SFT Training Document as a csv
   ```sh
   curl -L "https://drive.google.com/uc?export=download&id=1gQcQ0NQTQwiPxcm_0i6RedkbVM_vrggM" -o myfile.zip
-
   ```
+
+Important Piece of Advice: When using Colab, use A100 GPU as selected runtime for max efficiency
+
 ### Running RAG Model
 
 1. Open the [RAG colab notebook](https://colab.research.google.com/drive/1k775dmgq6Sw2-eLJWe3i02b2LYp-sHlA?usp=sharing)
@@ -109,12 +111,12 @@ Before SFT
 2. Clone the notebook to your personal drive
 3. Upload SFT Training Data to current Colab Notebook
   * Left Sidebar --> File Icon --> Upload Icon --> sftdata.csv
-4. Click "Run all" in the menu bar and scroll to bottom of the colab notebook
-5. Paste "Case Name"
+4. Click "Run all" in the menu bar and scroll to bottom of the colab notebook (this may take a couple minutes)
+5. Paste the "Case Name" of the intended case
     ```sh
    Case Name = "[Insert Here]"
     ```
-6. Paste "Long Summary"
+6. Paste the "Long Summary" outputted by the RAG model that aligns with the "Case Name"
     ```sh
    Long Summary = "[Insert Here]"
     ```
