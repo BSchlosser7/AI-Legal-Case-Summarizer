@@ -67,7 +67,7 @@ Before Rag
   ```
 * 2. Create any .txt document with case information
   ```sh
-  Create a document with all case information
+  Create a document with all case information and title it Compiled Cases RAG
   ```
 Before SFT
 * 1. Download SFT Training Document as a csv
@@ -103,6 +103,25 @@ Before SFT
 6. Click "Run all" in the menu bar and wait for outputs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Running SFT Model
+1. Open the [SFT colab notebook](https://colab.research.google.com/drive/1CqoHt73PNGU0aFp2-CS_liAiuYlqkeAj?usp=sharing)
+2. Clone the notebook to your personal drive
+3. Upload SFT Training Data to current Colab Notebook
+  * Left Sidebar --> File Icon --> Upload Icon --> sftdata.csv
+4. Click "Run all" in the menu bar and scroll to bottom of the colab notebook
+5. Paste "Case Name"
+    ```sh
+   Case Name = "[Insert Here]"
+    ```
+6. Paste "Long Summary"
+    ```sh
+   Long Summary = "[Insert Here]"
+    ```
+7. Press "Generate Short Summary" and wait for output
+
+
+
 
 
 
