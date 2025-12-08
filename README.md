@@ -11,14 +11,9 @@ This project builds an intelligent legal research pipeline that streamlines how 
 For fast consumption, the long-form summaries produced by the RAG model can be passed into a Supervised Fine-Tuned (SFT) summarization model. This secondary model transforms verbose case analyses into extremely concise, high-quality summaries optimized for quick understanding and efficient retrieval. Together, this pipeline creates a powerful end-to-end solution for managing, querying, and digesting complex legal case information.
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
