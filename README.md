@@ -37,9 +37,7 @@ For fast consumption, the long-form summaries produced by the RAG model can be p
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#techniques-used">Techniques Used</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -125,67 +123,57 @@ Important Piece of Advice: When using Colab, use A100 GPU as selected runtime fo
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This project is designed to function as a practical research assistant for legal professionals, helping them quickly navigate complex case material and retrieve exactly what they need in seconds. By storing case documents in a centralized repository, lawyers can query their entire library with natural language questions and receive precise, citation-ready responses.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<h3 align="left">How Lawyers Use the Tool</h3>
+
+Fast Case Familiarization:
+When preparing for hearings, depositions, or client meetings, attorneys can request concise summaries of any case in their library. This eliminates the need to skim lengthy opinions and accelerates early-stage research.
+
+Targeted Legal Questions:
+Lawyers can ask highly specific questions such as “What did the Court say about federal taxation powers in McCulloch v. Maryland?”
+The RAG model retrieves only the relevant sections—saving time and reducing the risk of overlooking important details.
+
+Consistent Summary Formatting:
+The SFT model outputs all summaries in a uniform, structured format, making it easy to build case binders, research memos, or internal knowledge systems.
+
+Efficient Multi-Case Comparison:
+Because each summary follows the same template, attorneys can quickly compare holdings, plaintiffs/defendants, and legal principles across different cases.
+
+<h3 align="left">Example Output</h3>
+
+Below is an example of a summary lawyers would receive from the SFT model:
+```sh
+  McCulloch v. Maryland
+  Year: 1819
+  Plaintiff: State of Maryland
+  Defendant: James McCulloch
+  Summary: The Court ruled that Congress had implied powers and states could not tax federal institutions.
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ROADMAP -->
-## Roadmap
+## Techniques Used
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+- [ ] Technique 1: Retrieval Augmented Generation (RAG)
+- [ ] Technique 2: Supervised Fine Tuning (SFT)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Top contributors:
-
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
-</a>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the project_license. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Team LAB MIS372T 
+Brady Schlosser
+- bradyschlosser@utexas.edu, 
+Anika Filitz
+- anikafilitz@utexas.edu
+Lucia Bonnin
+- luciabonnin@utexas.edu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,9 +182,8 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* We would like to thank our Professor, Yan Leng, and our two Teaching Assistants, Yunxin Sang and Yang Zhao, who helped us
+  throughout the entire project and semester.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
