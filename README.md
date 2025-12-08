@@ -159,7 +159,9 @@ Below is an example of a summary lawyers would receive from the SFT model:
 ## Techniques Used
 
 - [ ] Technique 1: Retrieval Augmented Generation (RAG)
+    * RAG combines document retrieval with generative AI to provide accurate, context-grounded answers. Instead of relying on the model’s memory alone, it searches your case repository, pulls the most relevant excerpts, and uses them to generate precise legal responses or long-form summaries.
 - [ ] Technique 2: Supervised Fine Tuning (SFT)
+    * SFT trains a model on curated examples to produce consistent, high-quality outputs in a specific style. In this project, the SFT model learns to turn lengthy case explanations into short, structured, attorney-ready summaries for fast review and comparison.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
