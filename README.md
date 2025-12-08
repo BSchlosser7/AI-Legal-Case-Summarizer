@@ -168,12 +168,12 @@ Below is an example of a summary lawyers would receive from the SFT model:
 ## Contact
 
 Team LAB MIS372T 
-Brady Schlosser
-- bradyschlosser@utexas.edu, 
-Anika Filitz
-- anikafilitz@utexas.edu
-Lucia Bonnin
-- luciabonnin@utexas.edu
+
+- Brady Schlosser: bradyschlosser@utexas.edu
+
+- Anika Filitz: anikafilitz@utexas.edu
+
+- Lucia Bonnin: luciabonnin@utexas.edu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
