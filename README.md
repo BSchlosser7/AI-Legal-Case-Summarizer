@@ -126,18 +126,10 @@ This project is designed to function as a practical research assistant for legal
 
 <h3 align="left">How Lawyers Use the Tool</h3>
 
-Fast Case Familiarization:
-When preparing for hearings, depositions, or client meetings, attorneys can request concise summaries of any case in their library. This eliminates the need to skim lengthy opinions and accelerates early-stage research.
-
-Targeted Legal Questions:
-Lawyers can ask highly specific questions such as “What did the Court say about federal taxation powers in McCulloch v. Maryland?”
-The RAG model retrieves only the relevant sections—saving time and reducing the risk of overlooking important details.
-
-Consistent Summary Formatting:
-The SFT model outputs all summaries in a uniform, structured format, making it easy to build case binders, research memos, or internal knowledge systems.
-
-Efficient Multi-Case Comparison:
-Because each summary follows the same template, attorneys can quickly compare holdings, plaintiffs/defendants, and legal principles across different cases.
+- Fast Case Familiarization 
+- Targeted Legal Questions
+- Consistent Summary Formatting
+- Efficient Multi-Case Comparison
 
 <h3 align="left">Example Output</h3>
 
