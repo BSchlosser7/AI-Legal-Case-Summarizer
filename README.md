@@ -6,9 +6,7 @@
   <p align="center">
     <h3 align="center">Project Description</h3>
 
-This project builds an intelligent legal research pipeline that streamlines how case documents are stored, retrieved, and summarized. Users first create a centralized repository containing multiple legal cases, each saved as an individual document. These documents are then ingested into a Retrieval-Augmented Generation (RAG) system, enabling highly accurate retrieval of case-specific information—whether answering targeted legal questions or generating detailed, context-rich summaries.
-
-For fast consumption, the long-form summaries produced by the RAG model can be passed into a Supervised Fine-Tuned (SFT) summarization model. This secondary model transforms verbose case analyses into extremely concise, high-quality summaries optimized for quick understanding and efficient retrieval. Together, this pipeline creates a powerful end-to-end solution for managing, querying, and digesting complex legal case information.
+This project creates an end-to-end intelligent legal research pipeline that centralizes case documents, ingests them into a Retrieval-Augmented Generation (RAG) system for precise, context-aware querying, and produces high-quality summaries. The long-form RAG outputs are then refined by a Supervised Fine-Tuned (SFT) summarization model, which transforms detailed analyses into concise, fast-to-read summaries. Together, these components streamline storage, retrieval, and understanding of complex legal information in a single efficient workflow.
     <br />
     <br />
     <br />
@@ -93,6 +91,8 @@ Important Piece of Advice: When using Colab, use A100 GPU as selected runtime fo
     ]
    ```
 6. Click "Run all" in the menu bar and wait for outputs
+7. The outputs can be mapped to Figure 2 in our report in which we show our RAG output's improvements.
+   * This is done in the final block of code in our RAG Notebook
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,10 +112,12 @@ Important Piece of Advice: When using Colab, use A100 GPU as selected runtime fo
    Long Summary = "[Insert Here]"
     ```
 7. Press "Generate Short Summary" and wait for output
+8. The outputs can be mapped to Figure 3 in our report in which we show our SFT output's improvements.
+  * This is done in the second-to-last block of code in our SFT notebook
 
 
 ## Pipeline
-BEGIN --> Download RAG "Compiled Case RAG" --> Run RAG Colab Notebook with personal API/Class inputted and RAG document uploaded --> Download Output from RAG (Output should have a >80% hit rate) --> Download SFT "sftdata.csv" --> Run SFT Colab Notebook with sftdata.csv uploaded --> Input case name and long summary at the end of the SFT notebook --> Generate short summary (Should align with the format described below in the "Usage") --> END
+BEGIN --> Download RAG "Compiled Case RAG" --> Run RAG Colab Notebook with personal API/Class inputted and RAG document uploaded --> Download Output from RAG [Output should have a >80% hit rate (Figure 1 in Report)] --> Evaluate RAG Output (Figure 2 in Report) --> Download SFT "sftdata.csv" --> Run SFT Colab Notebook with sftdata.csv uploaded --> Input case name and long summary at the end of the SFT notebook --> Generate short summary [Should align with the format described below in the "Usage" (Figure 1 in Report)] --> Evaluate SFT Output (Figure 3 in Report) --> END
 
 
 
