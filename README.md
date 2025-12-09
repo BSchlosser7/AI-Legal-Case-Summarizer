@@ -31,6 +31,7 @@ For fast consumption, the long-form summaries produced by the RAG model can be p
         <li><a href="#Running-SFT-Model">Running SFT Model</a></li>
       </ul>
     </li>
+    <li><a href="#Pipeline">Pipeline</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#techniques-used">Techniques Used</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -76,6 +77,7 @@ Important Piece of Advice: When using Colab, use A100 GPU as selected runtime fo
    ```
 4. Upload Compiled Cases RAG to current Colab Notebook
   * Left Sidebar --> File Icon --> Upload Icon --> Compiled Cases RAG
+    * "Compiled_cases_rag.txt" is the RAG knowledge base composed of 10 unique full-length law cases    
    
 5. If you ADDED new cases or CHANGED existing ones, edit to include: 
    ```sh
@@ -99,6 +101,7 @@ Important Piece of Advice: When using Colab, use A100 GPU as selected runtime fo
 2. Clone the notebook to your personal drive
 3. Upload SFT Training Data to current Colab Notebook
   * Left Sidebar --> File Icon --> Upload Icon --> sftdata.csv
+    * "Sftdata.csv" is what the SFT model uses to train the base model. It is composed of 10 long-summarized cases (~500 words) and their respective short summary with correct structure and tone.  
 4. Click "Run all" in the menu bar and scroll to bottom of the colab notebook (this may take a couple minutes)
 5. Paste the "Case Name" of the intended case
     ```sh
@@ -111,7 +114,8 @@ Important Piece of Advice: When using Colab, use A100 GPU as selected runtime fo
 7. Press "Generate Short Summary" and wait for output
 
 
-
+## Pipeline
+BEGIN --> Download RAG "Compiled Case RAG" --> Run RAG Colab Notebook with personal API/Class inputted and RAG document uploaded --> Download Output from RAG (Output should have a >80% hit rate) --> Download SFT "sftdata.csv" --> Run SFT Colab Notebook with sftdata.csv uploaded --> Input case name and long summary at the end of the SFT notebook --> Generate short summary (Should align with the format described below in the "Usage") --> END
 
 
 
