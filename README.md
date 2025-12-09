@@ -11,7 +11,7 @@ This project creates an end-to-end intelligent legal research pipeline that cent
     <br />
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://drive.google.com/file/d/1K0i9syq55kCyHEdgJ5LssEoO3Ie0jPF8/view?usp=sharing">View Demo</a>
   </p>
 </div>
 
